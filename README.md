@@ -1,3 +1,4 @@
+![myCoopHub](docs/images/myCoopHub-social-preview.jpg)
 <p align="center">
   <img src="docs/images/logo.png" alt="myCoopHub logo" width="180">
 </p>
