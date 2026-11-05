@@ -2,11 +2,6 @@
   <img src="docs/images/logo.png" alt="myCoopHub logo" width="180">
 </p>
 
-<h1 align="center">myCoopHub</h1>
-
-<p align="center">
-  Manage your co-op game servers on Coolify through a web interface and Discord automation.
-</p>
 # myCoopHub
 
 Manage your co-op game servers on Coolify through a web interface and Discord automation.
