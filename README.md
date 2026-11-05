@@ -1,4 +1,6 @@
-# Coolify_UI_API
+# myCoopHub
+
+Manage your co-op game servers on Coolify through a web interface and Discord automation.
 
 This repository provides a minimal structure to control multiple game servers via Coolify with three complementary building blocks:
 
@@ -110,7 +112,7 @@ flowchart TD
     Human -->|Connect| WebApp
     VoiceChannel -->|Joins/leaves| DiscordGateway
     DiscordGateway -->|Voice events| Bot
-    subgraph Coolify_UI_API
+    subgraph myCoopHub
        Bot -->|Lookup linked game| GameSelector
        GameSelector -->|Coolify IDs & instructions| Bot
        Bot -->|Start/stop command| CoolifyClient
