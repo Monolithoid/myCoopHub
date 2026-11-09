@@ -1,7 +1,9 @@
+<h1>
+  <img src="docs/images/logo.png" alt="" width="48" height="48" align="middle">
+  myCoopHub
+</h1>
+
 ![myCoopHub](docs/images/myCoopHub-social-preview.jpg)
-<p align="center">
-  <img src="docs/images/logo.png" alt="myCoopHub logo" width="180">
-</p>
 
 # myCoopHub
 
