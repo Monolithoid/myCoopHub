@@ -4,7 +4,7 @@ import path from "path";
 const persistentTargets = [
     {
         envKey: "ALLOWED_EMAILS_FILE",
-        defaultContent: "# Ajoutez une adresse email par ligne\n"
+        defaultContent: "# Add one email address per line\n"
     },
     {
         envKey: "GAME_PRESETS_FILE",
@@ -42,7 +42,7 @@ function createDirectoryIfMissing(directoryPath) {
     try {
         fs.mkdirSync(directoryPath, { recursive: true });
     } catch (error) {
-        console.error("Impossible de créer le dossier", directoryPath, error.message);
+        console.error("Unable to create directory", directoryPath, error.message);
     }
 }
 
@@ -53,8 +53,8 @@ function createFileIfMissing(filePath, defaultContent) {
 
     try {
         fs.writeFileSync(filePath, defaultContent, "utf-8");
-        console.log("Fichier persistant créé", filePath);
+        console.log("Persistent file created", filePath);
     } catch (error) {
-        console.error("Impossible de créer le fichier persistant", filePath, error.message);
+        console.error("Unable to create persistent file", filePath, error.message);
     }
 }

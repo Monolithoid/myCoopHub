@@ -1,2 +1,2 @@
-# Liste des comptes autorisés (un email par ligne)
+# Allowed accounts (one email per line)
 admin@example.com
