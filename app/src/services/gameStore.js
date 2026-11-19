@@ -236,7 +236,7 @@ function createDirectoryIfMissing(directoryPath) {
     try {
         fs.mkdirSync(directoryPath, { recursive: true });
     } catch (error) {
-        console.error("Impossible de créer le dossier", directoryPath, error.message);
+        console.error("Unable to create directory", directoryPath, error.message);
     }
 }
 
@@ -248,7 +248,7 @@ function createFileIfMissing(filePath) {
     try {
         fs.writeFileSync(filePath, "[]\n", "utf-8");
     } catch (error) {
-        console.error("Impossible de créer le fichier des jeux", filePath, error.message);
+        console.error("Unable to create games file", filePath, error.message);
     }
 }
 
@@ -261,7 +261,7 @@ function persistGamesToFile() {
         const serializedGames = JSON.stringify(games, null, 2) + "\n";
         fs.writeFileSync(persistence.filePath, serializedGames, "utf-8");
     } catch (error) {
-        console.error("Impossible d'enregistrer les jeux", persistence.filePath, error.message);
+        console.error("Unable to save games", persistence.filePath, error.message);
     }
 }
 
@@ -279,7 +279,7 @@ function startFileWatcher(persistenceTarget) {
             reloadGamesFromFile(persistenceTarget.filePath);
         });
     } catch (error) {
-        console.error("Impossible de surveiller le fichier des jeux", error.message);
+        console.error("Unable to watch games file", error.message);
     }
 }
 
